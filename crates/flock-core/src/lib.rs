@@ -33,6 +33,7 @@ use {std::collections::HashSet, std::fs::read_dir, std::fs::read_to_string};
 
 use crate::field::F128;
 pub mod aggregate;
+pub mod binary_sumcheck;
 pub mod bits;
 pub mod challenger;
 pub mod circuit;

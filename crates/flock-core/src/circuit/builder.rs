@@ -1565,6 +1565,11 @@ impl CircuitBuilder {
         self.shape.input()
     }
 
+    /// Index the next [`Self::publish`] will occupy. See [`ShapeBuilder::public_len`].
+    pub fn public_len(&self) -> usize {
+        self.shape.public_len()
+    }
+
     /// A value that is both free and public — the common case for circuit
     /// inputs.
     pub fn public_value(&mut self, value: F128) -> Wire {
